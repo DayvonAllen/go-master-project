@@ -1,8 +1,23 @@
 package celeritas
 
-import "net/http"
+import (
+	"github.com/go-chi/chi/v5"
+	"github.com/go-chi/chi/v5/middleware"
+	"net/http"
+)
 
 // return all default routes
 func (c *Celeritas) routes() http.Handler {
+	mux := chi.NewRouter()
+	mux.Use(middleware.RequestID)
+	mux.Use(middleware.RealIP)
 
+	if c.Debug {
+		mux.Use(middleware.Logger)
+	}
+
+	// recovers if the app panics
+	mux.Use(middleware.Recoverer)
+
+	return mux
 }

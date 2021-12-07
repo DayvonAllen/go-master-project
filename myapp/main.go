@@ -1,11 +1,16 @@
 package main
 
-import celeritas "example"
+import (
+	celeritas "example"
+	"myapp/handlers"
+)
 
-type  application struct {
-	App *celeritas.Celeritas
+type application struct {
+	App      *celeritas.Celeritas
+	Handlers *handlers.Handlers
 }
 
 func main() {
-	initApplication()
+	c := initApplication()
+	c.App.ListenAndServe()
 }
