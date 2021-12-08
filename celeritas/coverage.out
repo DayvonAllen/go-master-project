@@ -1,0 +1,22 @@
+mode: set
+example/render/render.go:34.111,35.37 1 1
+example/render/render.go:42.2,42.52 1 1
+example/render/render.go:36.12,37.36 1 1
+example/render/render.go:38.13,39.48 1 1
+example/render/render.go:46.102,50.16 2 1
+example/render/render.go:54.2,56.17 2 1
+example/render/render.go:61.2,63.16 2 1
+example/render/render.go:67.2,67.12 1 1
+example/render/render.go:50.16,52.3 1 1
+example/render/render.go:56.17,59.3 1 0
+example/render/render.go:63.16,65.3 1 0
+example/render/render.go:71.122,74.22 2 1
+example/render/render.go:80.2,82.17 2 1
+example/render/render.go:86.2,88.16 2 1
+example/render/render.go:93.2,93.46 1 1
+example/render/render.go:98.2,98.12 1 1
+example/render/render.go:74.22,76.3 1 1
+example/render/render.go:76.8,78.3 1 0
+example/render/render.go:82.17,84.3 1 0
+example/render/render.go:88.16,91.3 2 0
+example/render/render.go:93.46,96.3 2 0
