@@ -1,4 +1,16 @@
 mode: set
+example/session/session.go:20.53,26.16 3 1
+example/session/session.go:31.2,31.48 1 1
+example/session/session.go:35.2,35.47 1 1
+example/session/session.go:40.2,49.40 8 1
+example/session/session.go:61.2,61.16 1 1
+example/session/session.go:26.16,28.3 1 0
+example/session/session.go:31.48,33.3 1 1
+example/session/session.go:35.47,37.3 1 0
+example/session/session.go:50.15,50.15 0 0
+example/session/session.go:52.26,52.26 0 0
+example/session/session.go:54.32,54.32 0 0
+example/session/session.go:56.10,56.10 0 1
 example/render/render.go:34.111,35.37 1 1
 example/render/render.go:42.2,42.52 1 1
 example/render/render.go:36.12,37.36 1 1
@@ -18,5 +30,5 @@ example/render/render.go:98.2,98.12 1 1
 example/render/render.go:74.22,76.3 1 1
 example/render/render.go:76.8,78.3 1 0
 example/render/render.go:82.17,84.3 1 0
-example/render/render.go:88.16,91.3 2 0
+example/render/render.go:88.16,91.3 2 1
 example/render/render.go:93.46,96.3 2 0

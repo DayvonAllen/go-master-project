@@ -73,6 +73,7 @@ func (c *Celeritas) New(rootPath string) error {
 	c.Debug, _ = strconv.ParseBool(os.Getenv("DEBUG"))
 	c.Version = version
 	c.RootPath = rootPath
+
 	// cast to the right type
 	c.Routes = c.routes().(*chi.Mux)
 
