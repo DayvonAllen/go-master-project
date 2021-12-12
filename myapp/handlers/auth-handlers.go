@@ -57,3 +57,16 @@ func (h *Handlers) PostUserLogin(writer http.ResponseWriter, request *http.Reque
 
 	http.Redirect(writer, request, "/", http.StatusSeeOther)
 }
+
+func (h *Handlers) UserLogout(writer http.ResponseWriter, request *http.Request) {
+	err := h.App.Session.RenewToken(request.Context())
+
+	if err != nil {
+		h.App.ErrorLog.Println(err)
+		return
+	}
+
+	h.App.Session.Remove(request.Context(), "userID")
+
+	http.Redirect(writer, request, "/users/login", http.StatusSeeOther)
+}
