@@ -3,6 +3,7 @@ package main
 import (
 	celeritas "example"
 	"log"
+	"myapp/data"
 	"myapp/handlers"
 	"os"
 )
@@ -37,6 +38,8 @@ func initApplication() *application {
 	}
 
 	app.App.Routes = app.routes()
+
+	app.Models = data.New(app.App.DB.Pool)
 
 	return app
 }
