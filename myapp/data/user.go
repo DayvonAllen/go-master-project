@@ -178,7 +178,7 @@ func (u *User) ResetPassword(id int, password string) error {
 }
 
 func (u *User) PasswordMatches(password string) (bool, error) {
-	err := bcrypt.CompareHashAndPassword([]byte(password), []byte(u.Password))
+	err := bcrypt.CompareHashAndPassword([]byte(u.Password), []byte(password))
 
 	if err != nil {
 		switch {

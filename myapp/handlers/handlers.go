@@ -3,11 +3,13 @@ package handlers
 import (
 	celeritas "example"
 	"github.com/CloudyKit/jet/v6"
+	"myapp/data"
 	"net/http"
 )
 
 type Handlers struct {
-	App *celeritas.Celeritas
+	App    *celeritas.Celeritas
+	Models data.Models
 }
 
 func (h *Handlers) Home(w http.ResponseWriter, r *http.Request) {
